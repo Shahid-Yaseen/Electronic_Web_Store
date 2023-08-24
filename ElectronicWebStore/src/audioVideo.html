@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Appliances</title>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body class="overflow-x-hidden">
+    <header><nav class=" bg-blue-500">
+        <div class="flex justify-between items-center p-5">
+          <div id="mobile-menu-icon" class="group peer cursor-pointer block md:hidden">
+            <div class="bg-zinc-200 h-1 rounded-full w-8 group-open:rotate-45 transition-all top-0 group-open:top-2 relative"></div>
+            <div class="bg-zinc-200 h-1 rounded-full mt-1 w-8 group-open:opacity-0 opacity-100 transition-all"></div>
+            <div class="bg-zinc-200 h-1 rounded-full mt-1 w-8 transition-all top-0 group-open:-rotate-45 group-open:-top-2 relative"></div>
+          </div>
+          <div class="absolute w-full top-14 left-0 z-30 hidden bg-zinc-100 text-blue-500 peer-open:block md:hidden" >
+            <div id="all-products" class="relative group  p-2 ml-2 hover:cursor-pointer ">
+              <div > All products &dArr;</div>
+               <div class="hidden  group-open:block bg-zinc-100 top-full left-0  whitespace-nowrap text-left ">
+                   <div class="p-2">Air Conditionar</div>
+                   <div class="p-2">Kitchen Appliances</div>
+                   <div class="p-2">Pcs Laptop</div>
+                   <div class="p-2">Gadgets</div>
+                   <div class="p-2">Smart Phone</div>
+               </div>
+           </div>
+           <div class="hover:cursor-pointer p-2 ml-2">Home Appliances</div>
+           <div class="hover:cursor-pointer p-2 ml-2">Audio & Video</div>
+           <div class="hover:cursor-pointer p-2 ml-2">Refrigator</div>
+           <div class="hover:cursor-pointer p-2 ml-2">New Arrivals</div>
+           <div class="hover:cursor-pointer p-2 ml-2">Todays Deal</div>
+           <div class="hover:cursor-pointer p-2 ml-2">Gift Cards</div>
+           <div class="hover:cursor-pointer p-2 ml-2">Log In</div>
+           </div>
+            <div class="ml-28 hover:cursor-pointer" >
+                <img src="/src/Images/electronic-store-logo.svg" alt="electronic-store-logo">
+            </div>
+            <div class="hidden md:block mr-28 ">
+                <input  class="h-12 rounded-sm p-3" type="text" name="Search" id="search" placeholder="Search products...." >
+                <button class="bg-slate-900 text-slate-100 p-3"  type="submit"  >search</button>
+            </div>
+        </div>
+       
+        <div class="hidden md:flex items-center justify-evenly text-white font-bold border-t-[1px] border-t-black p-5">
+            <div class="relative group hover:cursor-pointer ml-11 ">
+               <div> All products</div>
+                <div class="hidden group-hover:block absolute bg-blue-500 top-full left-0  whitespace-nowrap text-left z-20">
+                    <div class="p-2">Air Conditionar</div>
+                    <div class="p-2">Kitchen Appliances</div>
+                    <div class="p-2">Pcs Laptop</div>
+                    <div class="p-2">Gadgets</div>
+                    <div class="p-2">Smart Phone</div>
+                </div>
+            </div>
+            <div class="hover:cursor-pointer">Home Appliances</div>
+            <div class="hover:cursor-pointer">Audio & Video</div>
+            <div class="hover:cursor-pointer">Refrigator</div>
+            <div class="hover:cursor-pointer">New Arrivals</div>
+            <div class="hover:cursor-pointer">Todays Deal</div>
+            <div class="hover:cursor-pointer">Gift Cards</div>
+            <div class="hover:cursor-pointer">BM</div>
+            <div class="hover:cursor-pointer mr-11">Log In</div>
+        </div>
+    </nav></header>
+
+    <div class="md:flex ">
+        <div  class="mt-20">
+            <h3 class="font-bold w-[300px] text-center text-2xl mb-10">Catagories</h3>
+            <u class="list-none flex flex-col items-center gap-3 no-underline">
+                <li class="list-none hover:cursor-pointer hover:text-blue-500">Air conditioner</li>
+                <li class="list-none hover:cursor-pointer hover:text-blue-500">Audio & video</li>
+                <li class="list-none hover:cursor-pointer hover:text-blue-500">Gadgets</li>
+                <li class="list-none hover:cursor-pointer hover:text-blue-500">Home appliances</li>
+                <li class="list-none hover:cursor-pointer hover:text-blue-500">Kitchen appliances</li>
+                <li class="list-none hover:cursor-pointer hover:text-blue-500"> PCs & laptop     </li>
+                <li class="list-none hover:cursor-pointer hover:text-blue-500"> Refrigerator</li>
+                <li class="list-none hover:cursor-pointer hover:text-blue-500"> Smart home</li>
+            </u>
+            <div class="ml-10 mt-14 flex flex-col justify-around gap-6">
+                <h4 class="text-2xl">Filter by price</h4>
+                <input type="range" name="price-range" id="price-range">
+                <div class="flex justify-between">
+                    <button class="bg-black text-zinc-50 px-[14px] py-[7px]" type="submit">Filter</button>
+                    <p>price: <span>$0-$400</span></p>                
+                </div>
+            </div>
+
+        </div>
+        <div >  <section class="text-gray-600 body-font mt-20 md:ml-[125px] md:mr-[125px] ml-5 mr-5 bg-white border-l-2">
+            <div>
+              <h3  class="p-5 inline-block font-bold text-6xl text-blue-500">Audio & Video
+                </h3> 
+                <p class="p-2 ml-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsum possimus repudiandae unde veritatis laudantium! Expedita eveniet laborum, est, pariatur iure corrupti facere maxime voluptatum nostrum, doloremque quasi officia deleniti eum cum aspernatur et repellendus assumenda ullam quis ad! Minus aut eius nam, saepe impedit earum iste alias aliquid corrupti quam ipsa tenetur, hic placeat explicabo dignissimos rem voluptate quos facere. Asperiores et, nam eaque in sunt odit. Animi nam voluptatum velit et beatae minus, nisi neque deleniti tempora quo!</p>
+            </div>
+            <div class="container px-5 py-24 mx-auto">
+              <div class="flex flex-wrap -m-4">
+                <div class="lg:w-1/3 md:w-1/2 p-4 w-full">
+                  <a class="block relative h-48 rounded overflow-hidden">
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./Images/electronic-store-product-gallery-image-18-400x400.jpg">
+                  </a>
+                  <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                      <div class="flex items-center space-x-1">
+                          <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                          </svg>
+                          <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                          </svg>
+                          <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                          </svg>
+                          <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                          </svg>
+                          <svg class="w-4 h-4 text-gray-300 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                          </svg>
+                      </div>
+                      </h3>
+                    <h2 class="text-gray-900 title-font text-lg font-medium">5G Unlocked Smartphone,12GB RAM+256GB Storage120Hz Fluid Display Hasselblad Quad Camera 65W Ultra Fast Charge 50W Wireless Charge</h2>
+                    <p class="mt-1">$16.00</p>
+                  </div>
+                </div>
+                <div class="lg:w-1/3 md:w-1/2 p-4 w-full">
+                  <a class="block relative h-48 rounded overflow-hidden">
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./Images/electronic-store-product-gallery-image-19-400x400.jpg">
+                  </a>
+                  <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                      <div class="flex items-center space-x-1">
+                          <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                          </svg>
+                          <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                          </svg>
+                          <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                          </svg>
+                          <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                          </svg>
+                          <svg class="w-4 h-4 text-gray-300 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                          </svg>
+                      </div>
+                      </h3>
+                    <h2 class="text-gray-900 title-font text-lg font-medium">5G Factory Unlocked Android Cell Phone 128GB Pro-Grade Camera 30X Space Zoom Night Mode, Space Grey</h2>
+                    <p class="mt-1">$21.15</p>
+                  </div>
+                </div>
+                <div class="lg:w-1/3 md:w-1/2 p-4 w-full">
+                  <a class="block relative h-48 rounded overflow-hidden">
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./Images/electronic-store-product-image-27-400x400.jpg">
+                  </a>
+                  <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                      <div class="flex items-center space-x-1">
+                          <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                          </svg>
+                          <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                          </svg>
+                          <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                          </svg>
+                          <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                          </svg>
+                          <svg class="w-4 h-4 text-gray-300 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                          </svg>
+                      </div>
+                      </h3>
+                    <h2 class="text-gray-900 title-font text-lg font-medium">13 Ultrabook Gaming Laptop: Intel Core i7-1165G7 4 Core, NVIDIA GeForce GTX 1650 Ti Max-Q, 13.3″ 1080p 120Hz, 16GB RAM, 512GB SSD, CNC Aluminum, Chroma RGB, Thunderbolt 4</h2>
+                    <p class="mt-1">$12.00</p>
+                  </div>
+                </div>
+                <div class="lg:w-1/3 md:w-1/2 p-4 w-full">
+                  <a class="block relative h-48 rounded overflow-hidden">
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./Images/electronic-store-product-gallery-image-18-400x400.jpg">
+                  </a>
+                  <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                      <div class="flex items-center space-x-1">
+                          <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                          </svg>
+                          <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                          </svg>
+                          <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                          </svg>
+                          <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                          </svg>
+                          <svg class="w-4 h-4 text-gray-300 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                          </svg>
+                      </div>
+                      </h3>
+                    <h2 class="text-gray-900 title-font text-lg font-medium">15.6″ FHD Display Laptop – Intel i7 – Intel HD Graphics 6000 , Webcam, WiFi, Bluetooth, HDMI, Windows 11,Grey</h2>
+                    <p class="mt-1">$18.40</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section></div>
+    </div>
+    
+    <footer class="text-gray-600 body-font ">
+        <div class="container px-5 py-24 mx-auto flex  md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col md:ml-[125px] md:mr-[125px] ml-5 mr-5">
+          <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+            <img src="./Images/electronic-store-logo-mono.svg" alt="electronic-store-logo-mono">
+            <p class="mt-2 text-sm text-gray-500">Air plant banjo lyft occupy retro adaptogen indego</p>
+          </div>
+          <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Shop</h2>
+              <nav class="list-none mb-10 text-blue-500">
+                <li>
+                  <a class="text-blue-500 hover:text-gray-800  hover:cursor-pointer">Hot deals</a>
+                </li>
+                <li>
+                  <a class="text-blue-500 hover:text-gray-800 hover:cursor-pointer">Categories</a>
+                </li>
+                <li>
+                  <a class="text-blue-500 hover:text-gray-800 hover:cursor-pointer">Brands</a>
+                </li>
+                <li>
+                  <a class="text-blue-500 hover:text-gray-800 hover:cursor-pointer">Rebates</a>
+                </li>
+                <li>
+                  <a class="text-blue-500 hover:text-gray-800 hover:cursor-pointer">Weekly deals</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Need help?</h2>
+              <nav class="list-none mb-10 text-blue-500">
+                <li>
+                  <a class="text-blue-500 hover:text-gray-800  hover:cursor-pointer">Contact</a>
+                </li>
+                <li>
+                  <a class="text-blue-500 hover:text-gray-800 hover:cursor-pointer">Order tracking</a>
+                </li>
+                <li>
+                  <a class="text-blue-500 hover:text-gray-800 hover:cursor-pointer">FAQs</a>
+                </li>
+                <li>
+                  <a class="text-blue-500 hover:text-gray-800 hover:cursor-pointer">Return policy</a>
+                </li>
+                <li>
+                  <a class="text-blue-500 hover:text-gray-800 hover:cursor-pointer">Privacy policy</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Contact</h2>
+              <nav class="list-none mb-10 text-blue-500">
+                <li>
+                  <a class="text-blue-500 hover:text-gray-800  hover:cursor-pointer">123 Fifth Avenue, New York, NY</a>
+                </li>
+                <li>
+                  <a class="text-blue-500 hover:text-gray-800 hover:cursor-pointer">10160</a>
+                </li>
+                <li>
+                  <a class="text-blue-500 hover:text-gray-800 hover:cursor-pointer">contact@info.com</a>
+                </li>
+                <li>
+                  <a class="text-blue-500 hover:text-gray-800 hover:cursor-pointer">929-242-6868</a>
+                </li>
+               
+              </nav>
+            </div>
+            
+          </div>
+        </div>
+        <div class="bg-gray-100 w-auto">
+          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <p class="text-gray-500 text-sm text-center sm:text-left">© 2023 Tronmart —
+              <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@copyright reserved</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
